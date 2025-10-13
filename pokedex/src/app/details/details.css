@@ -1,0 +1,28 @@
+.dtls {
+    width: 350px;
+    text-align: center;
+    /*background-color: red;*/
+}
+
+.bdg {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 2px 4px;
+    font-weight: bold;
+}
+
+.door {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 0.75rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
