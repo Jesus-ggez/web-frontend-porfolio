@@ -1,0 +1,39 @@
+//* 
+import { css } from "lit";
+
+export const xGetStyle = css`/*/
+    .card {
+        background-color: #fafafa;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform:
+            transform 0.3s ease-in-out,
+            box-shadow 0.3s ease-in-out;
+        font-size: 1.2rem;
+        color: #444;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    }
+    :host {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    h2 {
+        text-align: center;
+    }
+/*/`; // */
+
