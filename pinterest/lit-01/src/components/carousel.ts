@@ -1,8 +1,9 @@
 import { unsafeHTML } from "lit/directives/unsafe-html.js";
+import { LitElement, html, css, unsafeCSS } from "lit";
 import { customElement } from "lit/decorators.js";
-import { LitElement, html, css } from "lit";
 
 import { Logos } from "../shared/logipsum";
+import {ColorScheme} from "../shared/colors";
 
 
 @customElement('x-carousel')
@@ -23,6 +24,7 @@ export class XCarousel extends LitElement {
     }
     static styles = css`
         section {
+            background-color: ${ unsafeCSS(ColorScheme.Primary.greeny) };
             margin 100px auto;
             overflow-x: auto;
             display: flex;
@@ -36,8 +38,8 @@ export class XCarousel extends LitElement {
             animation: rotate 10s infinite linear;
             justify-content: center;
             align-items: center;
-            gap: 1em;
             padding-right: 1em;
+            gap: 1em;
         }
         svg {
             padding: 1rem;

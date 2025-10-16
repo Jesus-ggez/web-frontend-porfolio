@@ -14,6 +14,17 @@ export class XCreativity extends LitElement {
             'Discover how our AI-Powered Design Assistant ',
             'transform your ideas into stunning designs effortiessly. ',
             'Follow these simple steps to turn your vision into reality.',
+        ],
+
+        cards: [
+            {
+                icon: 'upload',
+                title: 'Upload Brief',
+                description: [
+                    'Share your project details and let our AI',
+                    'grasp yout vision.',
+                ]
+            }
         ]
     }
 
@@ -38,6 +49,7 @@ export class XCreativity extends LitElement {
     }
     static styles = css`
         :host {
+            background-color: ${ unsafeCSS(ColorScheme.Primary.greeny + 'dd') };
             padding: 2rem 1rem 10px 1rem;
             border-radius: 8px;
             display: block;
@@ -45,9 +57,9 @@ export class XCreativity extends LitElement {
             overflow: hidden;
         }
         h2, p {
-            font-size: ${ unsafeCSS(FontSizes.MovilFont.h2) };
+            font-size: calc(${ unsafeCSS(FontSizes.MovilFont.h2) } - .35rem);
             color: ${ unsafeCSS(ColorScheme.Primary.white) };
-            margin: 1rem 1rem 10px 1rem;
+            margin: 1rem 0 10px 1rem;
             font-family: "Roboto";
         }
         p {
@@ -55,6 +67,24 @@ export class XCreativity extends LitElement {
         }
         span {
             color: ${ unsafeCSS(ColorScheme.Primary.darkGreen) };
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            padding: 10px;
+            max-width: 60%;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: ${ unsafeCSS(FontSizes.PcFont.h2) };
+            }
+            p {
+                font-size: ${ unsafeCSS(FontSizes.PcFont.p) };
+            }
+            section {
+                display: flex;
+                justify-content: center;
+            }
         }
     `;
 }

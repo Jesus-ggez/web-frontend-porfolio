@@ -1,7 +1,7 @@
 const Primary = {
     bangladesh: '#03624c',
-    caribbean: '#000f81',
     darkGreen: '#032221',
+    greeny: '#a5d6a7',
     richBlack: '#00df81',
     mountain: '#2cc295',
     white: '#f1f7f6',
